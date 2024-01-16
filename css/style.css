@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(139, 139, 139);
+}
+.config  {
+  font-size: 2.8rem;
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  border-radius:10px;
+  border: 1px solid black;
+  margin-top: 20px;
+  font-family: 'Salsa', cursive;
+  padding: 20px;
+  background-image: url('https://png.pngtree.com/png-clipart/20201129/ourlarge/pngtree-yellow-title-border-png-image_2439871.jpg');
+  background-position: 10px;
+}
+footer .config {
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+main {
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+}
+main input {
+  width: 100%;
+  padding: 12px;
+  font-size: 34px;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: 1px solid black;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+section {
+  position: fixed;
+  box-shadow: -6px -2px 25px -13px rgba(0, 0, 0, 0.15);
+  width: 340px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  transition: all 0.2s;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+section h2 {
+  position: absolute;
+  top: 20px;
+  right: 360px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  background: url("../img/cart.png") center center no-repeat blue;
+}
+section h2 span {
+  display: block;
+  background-color: rgb(250, 151, 2);
+  border-radius: 150px;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin: -10px 0 0 30px;
+}
+section h4 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.btn {
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid blue;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+
+}
+.btn:hover {
+  border: 1px solid white;
+}
+.btnQuitar {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.productoCarrito {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.61);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+.productoCarrito p {
+  font-size: 1.2rem;
+}
+.productoCarrito h3 {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+.divBotones {
+  display: flex;
+
+}
+.colorTarjeta {
+  background-color: white;
+}
+.ocultar {
+  right: -340px;
+  transition: all 0.2s;
+}
+#productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: auto;
+}
+.producto {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+}
+.producto .precio {
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: rgba(255, 136, 0, 0.418);
+  display: inline-block;
+  padding: 4px 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-top: 4px;
+}
+.producto .imagen {
+  display: flex;
+  justify-content: center;
+  min-height: 160px;
+  margin: 20px 0;
+}
+.producto .imagen img {
+  max-height: 150px;
+}
+.btnComprar {
+  margin-top: 30px;
+}
+.producto:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+}
+.oculto {
+  display: none;
+}
+.info {
+  border-radius: 10px;
+}

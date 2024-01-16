@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de compras </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="config">CompuS</h1>
+    </header>
+    <main>
+      <input type="text" id="inputBuscar" value="" placeholder="Buscar producto..." />
+      <div id="productos">
+      </div>
+    </main>
+
+    <section class="ocultar">
+      <h2>
+        <span id="cantidadProductos">0</span>
+      </h2>
+      <div id="carrito">
+      </div>
+      <h3>Total: $<span id="totalCarrito">0</span></h3>
+      <div class="divBotones">
+      <button href="#" id="botonComprar" class="btn btnComprar oculto">Comprar</button>
+      <button href="#" id="botonVaciar" class="btn btnComprar oculto">Vaciar Carrito</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="config">
+        Todos los derechos reservados. CompuS©
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
